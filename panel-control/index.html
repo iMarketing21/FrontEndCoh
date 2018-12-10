@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/style-panel-control.css">
+
+    <link rel="stylesheet" href="font/css/all.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Panel de control | Cohett</title>
+  </head>
+  <body>
+<div class="container-panel">
+  <div class="row no-gutters">
+    <div class="col-md-3 col-lg-2">
+      <div class="contenedor-titulo">
+        <h3>Te encuentras en el canal</h3>
+        <div class="titulo-pagina">
+          <span class="align-middle icono"><i class="fas fa-archive"></i></span>
+          <span class="align-middle titulo">Mayoristas</span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+      <!--MENU LATERAL-->
+      <nav class="menu-lateral">
+        <ul id="accordion1" class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#item-1" data-parent="#accordion1"><i class="fas fa-home"></i> Resumen</a>
+            <div id="item-1" class="collapse">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sub 1-1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sub 1-2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sub 1-3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--/MENU LATERAL-->
+      </div>
+    </div>
+    <div class="col-md-9 col-lg-10">
+      <header>
+
+        <div class="menu-superior">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <a class="btn-small-cuadro float-lg-right" href="#"><i class="fas fa-power-off"></i> SALIR</a>
+              <a class="btn-small-cuadro float-lg-right" href="#"><i class="fas fa-magic"></i> Ayuda</a>
+            </div>
+
+            <!--************LINK CANALES************-->
+            <div class="col-md-4 col-lg-3">
+              <center>
+                <a data-toggle="modal" data-target=".misCanales" href="#">
+                <img src="img/canales.png" class="img-fluid" /><br/>
+                <span class="enlaceNaranja">Mis canales de venta</span></i>
+                </a>
+                <a href="#"><sup><i class="fas fa-question-circle ico-ayuda"></i></sup></a>
+              </center>
+              <!--MODAL CANALES-->
+
+                <div class="modal fade misCanales" id="misCanales" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="titulo-modal">
+                      Mis Canales de Venta
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          <div class="row">
+                            <!--Link Canal-->
+                            <div class="col-lg-3">
+                              <center>
+                                <a class="link-canal" href="#">
+                                  <div class="circle-text">
+                                    <div>
+                                      <i class="fas fa-archive align-middle"></i>
+                                    </div>
+                                  </div>
+                                  <h3 class="nombre-canal">Mayorista</h3>
+                                </a>
+                              </center>
+                            </div>
+                            <!--/Link Canal-->
+                          </div>  
+                         </div>  
+                        <!--SIDEBAR MODAL - CANALES-->
+                        <div class="col-lg-4">
+                          <div class="sidebar-modal">
+                            <p>Un canal de venta es aquel publico objetivo al cual le vas a vender con unos beneficios personalizados según tu estrategía comercial.</p>
+                            <a href="#">
+                              <img src="img/cohett-canal.png" class="img-fluid">
+                              Crear Nuevo<br/>Canal de Venta
+                            </a>
+                          </div>
+                        </div>
+                        <!--/SIDEBAR MODAL - CANALES-->
+                        
+                      </div> 
+                         
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal"><span aria-hidden="true">&times;</span> CERRAR</button>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+            </div>
+            <!--************/LINK CANALES************-->
+            <!--************LINK INTERFAZ************-->
+            <div class="col-md-4 col-lg-3">
+              <!--BOTON INTERFACES-->
+              <center>
+                <a href="#" class="btn-naranja" data-toggle="modal" data-target=".misInterfaces"><i class="fas fa-laptop"></i> Interfaces de Venta</a>
+                <a href="#"><sup><i class="fas fa-question-circle ico-ayuda"></i></sup></a>
+              </center>
+              <!--/BOTON INTERFACES-->
+              <!--MODAL INTERFACES-->
+              <div class="modal fade misInterfaces" id="misCanales" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="titulo-modal">
+                      Mis Interfaces de Venta
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          <div class="row">
+                            <!--Interfaz Personalizada-->
+                            <div class="col-lg-4">
+                              <center>
+                                <div class="link-interfaz">
+                                  <img src="img/ico-interfaz/ico-web-color.png" class="img-fluid">
+                                  <div class="sistema-tiendas"><h3>Tienda Virtual</h3></div>
+                                  <div class="sistema-tiendas"><h4>Tienda para mayoristas</h4></div>
+                                  <p><b>Canal: </b>Mayoristas</p>
+                                  <a href="#" class="btn-naranja">EDITAR</a>
+                                </div>
+                              </center>
+                            </div>
+                            <!--/Interfaz Personalizada-->
+                            <!--Interfaz Personalizada-->
+                            <div class="col-lg-4">
+                              <center>
+                                <div class="link-interfaz">
+                                  <img src="img/ico-interfaz/ico-pos-color.png" class="img-fluid">
+                                  <div class="sistema-pos"><h3>Sistema POS</h3></div>
+                                  <div class="sistema-pos"><h4>POS tiendas Valle</h4></div>
+                                  <p><b>Canal:</b> Mayoristas</p>
+                                  <a href="#" class="btn-naranja">EDITAR</a>
+                                </div>
+                              </center>
+                            </div>
+                            <!--/Interfaz Personalizada-->
+                            
+                          </div> 
+                        </div>
+
+                        <!--SIDEBAR MODAL - INTERFAZ-->
+                        <div class="col-lg-4">
+                          <div class="sidebar-modal">
+                            <div class="titulo-interfaz">
+                              Crear una nueva interrfase
+                            </div>
+                            <center><img src="img/ico-interfaz/flecha-abajo.png" class="img-fluid" style="margin-top: -20px"></center>
+                            <center>
+                              <a href="#" class="sistema-pos">
+                                <img src="img/ico-interfaz/ico-pos.png" class="img-fluid">
+                                <h3>Sistema POS</h3>
+                              </a>
+                              <a href="#" class="sistema-tiendas">
+                                <img src="img/ico-interfaz/ico-web.png" class="img-fluid">
+                                <h3>Tienda Virtual</h3>
+                              </a>
+                            </center>
+                          </div>
+                        </div>
+                        <!--/SIDEBAR MODAL - INTERFAZ-->   
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal"><span aria-hidden="true">&times;</span> CERRAR</button>
+                    </div>
+
+                  </div>
+                </div> 
+               </div> 
+               <!--/MODAL INTERFACES-->
+          </div>
+          <!--************/LINK INTERFAZ************-->
+          <div class="col-md-4 col-lg-6">
+            <div class="row align-items-center no-gutters">
+              <div class="col-md-5">
+                <center>
+                  <div class="notificaciones">
+                    <div class="nuevo-mensaje">
+                      <i class="fas fa-envelope"></i>
+                      <span>100</span>
+                    </div>
+                    <div class="nuevo-mensaje">
+                      <i class="fas fa-bell"></i>
+                      <span>100</span>
+                    </div>
+                  </div>
+                </center>
+              </div>
+              <div class="col-md-7">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-md-4 foto-perfil">
+                    <img src="img/foto-perfil.png" class="img-fluid rounded"> 
+                  </div>
+                  <div class="col-md-8 perfil-header">
+                    <h2>¡Hola, iMarketing!</h2>
+                    <a href="#">Perfil Empresarial</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+           </div> 
+          </div> 
+      </header>
+
+      <!--AREA DE CONTENIDO-->
+      <div class="area-contenido">
+        <h1>RESUMEN</h1>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </body>
+</html>
