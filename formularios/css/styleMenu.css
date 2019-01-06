@@ -117,6 +117,14 @@ a.article:hover {
     background-color:  #3e3d3f !important;
 }
 
+.terminado{
+    color: #e6522f !important;
+}
+
+.terminado:hover{
+    color: #fff !important;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE

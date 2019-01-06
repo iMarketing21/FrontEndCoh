@@ -42,6 +42,47 @@ html, body{
     position: relative;
 }
 
+
+.caja-ambiente-dos{
+    background: #3b4e98;
+    background: -moz-linear-gradient(top, #3b4e98 0%, #333476 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #3b4e98), color-stop(100%, #333476));
+    background: -webkit-linear-gradient(top, #3b4e98 0%, #333476 100%);
+    background: -o-linear-gradient(top, #3b4e98 0%, #333476 100%);
+    background: -ms-linear-gradient(top, #3b4e98 0%, #333476 100%);
+    background: linear-gradient(to bottom, #3b4e98 0%, #333476 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b4e98', endColorstr='#333476', GradientType=0 );
+    background-size: contain;
+    height: auto;
+    width: 100%; 
+    padding: 0 0 2rem 0;
+    z-index: 1;
+    position: relative;
+}
+
+.caja-ambiente-tres{
+    background: #333476;
+    background: -moz-linear-gradient(top, #333476 0%, #140d34 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #333476), color-stop(100%, #140d34));
+    background: -webkit-linear-gradient(top, #333476 0%, #140d34 100%);
+    background: -o-linear-gradient(top, #333476 0%, #140d34 100%);
+    background: -ms-linear-gradient(top, #333476 0%, #140d34 100%);
+    background: linear-gradient(to bottom, #333476 0%, #140d34 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333476', endColorstr='#140d34', GradientType=0 );
+    background-size: contain;
+    height: auto;
+    width: 100%; 
+    padding: 0 0 2rem 0;
+    z-index: 1;
+    position: relative;
+}
+
+.caja-borde{
+    padding: 1rem 0;
+    border:solid 1px #e65221;
+    border-radius: 1rem;
+}
+
 /*Animación Fondo*/
 
 @keyframes animatedBackground {
@@ -127,6 +168,21 @@ html, body{
     margin-right:0; 
 }
 
+.sub-titulo{
+    background-color:#e65221;
+    color:#fff;
+    padding: 0.7rem 1rem;
+}
+
+.sub-titulo h2{
+    margin: 0;
+}
+
+.modal-header{
+    background-color:#e65221;
+    color:#fff;
+}
+
 .caja-formulario{
     background-color: #fff;
     border-radius: 0 0 1rem 1rem;
@@ -135,7 +191,8 @@ html, body{
     position: relative;
 }
 
-.caja-formulario .form-control{
+.caja-formulario .form-control,
+.modal-body .form-control{
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -154,9 +211,42 @@ html, body{
     background-color: #f2f2f2; 
 }
 
+.caja-formulario .input-group-btn{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px #e65221 solid;
+    border-radius: 0;
+    background-color: #e65221 !important; 
+}
+
+.caja-formulario .input-group-btn a{
+    color:#fff;
+}
+
+.caja-formulario .input-group-btn a:hover{
+    color:#282828;
+}
+
+
 
 .caja-formulario .form-group{
     margin: 0 0 2rem 0;
+}
+
+.caja-formulario label{
+    font-weight: bold;
+}
+
+
+.caja-formulario h1,
+.caja-formulario h2,
+.caja-formulario h3,
+.caja-formulario h4,
+.caja-formulario h5,
+.caja-formulario h6{
+    color:#e65221;
+    text-align: center;
 }
 
 .pregunta{
@@ -176,10 +266,158 @@ html, body{
     font-size: 1.3rem !important;
 }
 
+.btn-cohett-naranja:hover {
+    color: #fff;
+    background-color: #c44014;
+    border-color: #c44014;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 60px !important;
+    font-size: 1.3rem !important;
+}
+
+
+.btn-cohett-naranja-small {
+    color: #fff;
+    background-color: #e65221;
+    border-color: #e65221;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 60px !important;
+    font-size: 0.9rem !important;
+}
+
+.btn-cohett-naranja-small:hover {
+    color: #fff;
+    background-color: #c44014;
+    border-color: #c44014;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 60px !important;
+    font-size: 0.9rem !important;
+}
+
+.btn-tipo-canal{
+    color: #fff;
+    background-color: #3e3d3f;
+    border-color: #3e3d3f;
+}
+
+.btn-tipo-canal:hover{
+    color: #fff;
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.btn-tipo-canal:not(:disabled):not(.disabled):active, 
+.btn-tipo-canal:not(:disabled):not(.disabled).active, 
+.show > .btn-tipo-canal.dropdown-toggle {
+    color: #fff;
+    background-color: #e65221;
+    border-color: #e65221;
+}
+
+.bg-gris{
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+}
+
+.bg-gris h1,
+.bg-gris h2,
+.bg-gris h3,
+.bg-gris h4,
+.bg-gris h5,
+.bg-gris h6{
+    color:#e65221;
+}
+
+
+.bg-nota{
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+    /*border: 1px solid #e65221;*/
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    text-align: justify;
+}
+
+.bg-nota h1,
+.bg-nota h2,
+.bg-nota h3,
+.bg-nota h4,
+.bg-nota h5,
+.bg-nota h6{
+    color:#e65221;
+}
+
 .ayuda img{
     right:0;
     bottom:0;
     position: absolute;
     z-index: 999;
     cursor: pointer;
+}
+
+.estrategiaPasos{
+    background-image: url(../img/bg-pasos-estrategia.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    margin:1rem 0; 
+}
+
+.btn-paso{
+    text-align: center;
+    background-color: #3e3d3f;
+    color:#fff;
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-paso-activo{
+    text-align: center;
+    background-color: #e65221;
+    color:#fff !important;
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-paso:hover{
+    background-color: #e65221;
+    text-decoration: none;
+    color:#fff;
+}
+
+.btn-paso-off{
+    text-align: center;
+    background-color: #aaaaaa;
+    color:#fff !important;
+    padding: 1rem;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.thead-dark{
+    font-size: 0.8rem;
+}
+
+.btn-eliminar,.btn-editar{
+    text-align: center;
+}
+
+.btn-eliminar a{
+    color:red;
+}
+
+.btn-eliminar a:hover{
+    color:rgb(161, 1, 1);
+}
+
+.btn-editar a{
+    color:green;
+}
+
+.btn-editar a:hover{
+    color:rgb(0, 80, 0);
 }
