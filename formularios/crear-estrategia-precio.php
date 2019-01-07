@@ -79,25 +79,47 @@
                                             <div class="form-group">
                                                 <strong>La escala aplica para:</strong> <sup class="pregunta"><i class="fas fa-question-circle" data-toggle="tooltip" title="xxxx"></i></sup>
                                                 <br/>
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-tipo-canal">
-                                                        <input type="radio" name="options" id="option2" autocomplete="off"> Para todos los productos
+                                                        <input type="radio" name="options" id="option2" autocomplete="off"> Todos los productos
                                                     </label>
                                                     <label class="btn btn-tipo-canal">
-                                                        <input type="radio" name="options" id="option3" autocomplete="off">Para un producto
+                                                        <input type="radio" name="options" id="option3" autocomplete="off">Categoría de producto
+                                                    </label>
+                                                    <label class="btn btn-tipo-canal">
+                                                        <input type="radio" name="options" id="option3" autocomplete="off">Un producto
                                                     </label>
                                                 </div>
                                             </div>
-                                                <div class="form-group">
-                                                    <label for="">Seleccionar producto <sup class="pregunta"><i class="fas fa-question-circle" data-toggle="tooltip" title="De clic sobre el producto al cual desea aplicarle una escala."></i></sup></label>
-                                                
-                                                    <select id="" class="form-control" aria-describedby="inputGroupPrepend">
-                                                        <option selected>Producto 1</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                   
-                                                 
-                                                </div> 
+                                                <!--NOTA: ESTE SOLO APARECE CUANDO EL USUARIO SELECCIONES "UN PRODUCTO O CATEGORÍA DE PRODUCTO"-->
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">Categoría de producto <sup class="pregunta"><i class="fas fa-question-circle" data-toggle="tooltip" title="De clic sobre el producto al cual desea aplicarle una escala."></i></sup></label>
+                                                        
+                                                            <select id="" class="form-control" aria-describedby="inputGroupPrepend">
+                                                                <option selected>Categoría 1</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="">Nombre de producto <sup class="pregunta"><i class="fas fa-question-circle" data-toggle="tooltip" title="De clic sobre el producto al cual desea aplicarle una escala."></i></sup></label>
+                                                        
+                                                            <select id="" class="form-control" aria-describedby="inputGroupPrepend">
+                                                                <option selected>Producto 1</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                                <div class="tags">
+                                                    Samsung A9+ <a href="#"><i class="fas fa-times-circle"></i></a>
+                                                </div>
+                                                <div class="tags">
+                                                    iPhone X Apple <a href="#"><i class="fas fa-times-circle"></i></a>
+                                                </div>
                                             </center>
                                         </div>
                                     </div>
@@ -135,11 +157,11 @@
                                                     </div>
                                                 </div>
                                             </center>
-                                        </div>
-                                        <hr/>
+                                        
+                                        
 
                                         <div class="table-responsive">
-                                            <table class="table">
+                                            <table class="table table-striped">
                                                 <thead class="thead-dark">
                                                     <tr>
                                                     <th scope="col">Escala por valor</th>
@@ -149,13 +171,14 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Entre 1 y 100 unidades con descuento de 20%</td>
+                                                        <td class="align-middle detalle">Entre 1 y 100 unidades con descuento de 20%</td>
                                                         
-                                                        <td class="btn-editar"><a href="#"><i class="fas fa-edit"></i></a></td>
-                                                        <td class="btn-eliminar"><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                                                        <td class="btn-editar align-middle"><a href="#"><i class="fas fa-edit"></i></a></td>
+                                                        <td class="btn-eliminar align-middle"><a href="#"><i class="fas fa-times-circle"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-lg-6">
@@ -190,11 +213,11 @@
                                                     </div>
                                                 </div>
                                             </center>
-                                        </div>
-                                        <hr/>
+                                        
+                                        
 
                                         <div class="table-responsive">
-                                            <table class="table">
+                                            <table class="table table-striped">
                                                 <thead class="thead-dark">
                                                     <tr>
                                                     <th scope="col">Escala por valor</th>
@@ -204,13 +227,20 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Entre 1 y 100 pesos con descuento de 20%</td>
+                                                        <td class="align-middle detalle">Entre 1 y 100 pesos con descuento de 20%</td>
                                                         
-                                                        <td class="btn-editar"><a href="#"><i class="fas fa-edit"></i></a></td>
-                                                        <td class="btn-eliminar"><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                                                        <td class="btn-editar align-middle"><a href="#"><i class="fas fa-edit"></i></a></td>
+                                                        <td class="btn-eliminar align-middle"><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle detalle">Entre 101 y 499 pesos con descuento de 40%</td>
+                                                        
+                                                        <td class="btn-editar align-middle"><a href="#"><i class="fas fa-edit"></i></a></td>
+                                                        <td class="btn-eliminar align-middle"><a href="#"><i class="fas fa-times-circle"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
                                         </div>
                                     </div>
 
@@ -223,7 +253,7 @@
                                     <div class="row">
                                         <div class="col-lg-3"><a class="btn-paso-activo">1.<br/>Producto</a></div>
                                         <div class="col-lg-3"><a class="btn-paso-activo">2.<br/>Precio</a></div>
-                                        <div class="col-lg-3"><a class="btn-paso-off" href="#">3.<br/>Promoción</a></div>
+                                        <div class="col-lg-3"><a class="btn-paso" href="#">3.<br/>Promoción</a></div>
                                         <div class="col-lg-3"><a class="btn-paso-off">4.<br/>Fidelización</a></div>  
                                     </div>
                                 </div>
@@ -237,43 +267,7 @@
     </section>
 </div>
 </div>
-<!-- Modal Categorias-->
-<div class="modal fade" id="categoriasProductos" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Crear Categoría</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="">Nombre Categoría <sup class="pregunta"><i class="fas fa-question-circle" data-toggle="tooltip" title="Se entiende por categoría el grado de jerarquía dentro de un orden de productos."></i></sup></label>
-                    <input type="text" class="form-control" id="" aria-describedby="emailHelp">
-                </div>
-                <button type="submit" class="btn btn-cohett-naranja-small">Crear Categoría</button>
-                <hr/>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                            <th scope="col">Nombre Categoría</th>
-                            <th scope="col"><center>Eliminar</center></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Celulares Gama Alta</td>
-                                <td class="btn-eliminar"><a href="#"><i class="fas fa-times-circle"></i></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <?php include 'ayuda.php';?>
 
 

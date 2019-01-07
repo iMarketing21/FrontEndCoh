@@ -77,6 +77,23 @@ html, body{
     position: relative;
 }
 
+.caja-ambiente-cuatro{
+    background: #140d34;
+    background: -moz-linear-gradient(top, #140d34 0%, #470f30 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #140d34), color-stop(100%, #470f30));
+    background: -webkit-linear-gradient(top, #140d34 0%, #470f30 100%);
+    background: -o-linear-gradient(top, #140d34 0%, #470f30 100%);
+    background: -ms-linear-gradient(top, #140d34 0%, #470f30 100%);
+    background: linear-gradient(to bottom, #140d34 0%, #470f30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#140d34', endColorstr='#470f30', GradientType=0 );
+    background-size: contain;
+    height: auto;
+    width: 100%; 
+    padding: 0 0 2rem 0;
+    z-index: 1;
+    position: relative;
+}
+
 .caja-borde{
     padding: 1rem 0;
     border:solid 1px #e65221;
@@ -202,6 +219,7 @@ html, body{
 }
 
 
+
 .caja-formulario .input-group-text{
     border-top: 0;
     border-left: 0;
@@ -249,6 +267,23 @@ html, body{
     text-align: center;
 }
 
+
+.caja-formulario .card-header{
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.caja-formulario .card-header:hover{
+    background-color: #e65221;
+    cursor: pointer;
+}
+
+.caja-formulario .card-header h2{
+    color: #fff !important;
+    font-size: 1.3rem;
+}
+
+
 .pregunta{
     cursor: pointer;
 }
@@ -264,6 +299,7 @@ html, body{
     font-family: 'Baloo Bhai', cursive;
     border-radius: 60px !important;
     font-size: 1.3rem !important;
+    margin: 1rem 0;
 }
 
 .btn-cohett-naranja:hover {
@@ -318,6 +354,15 @@ html, body{
     background-color: #f2f2f2;
     padding: 1rem;
     margin: 0 0 2rem 0;
+}
+
+.bg-gris .form-control{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px #e65221 solid;
+    border-radius: 0;
+    background-color: #fff; 
 }
 
 .bg-gris h1,
@@ -398,7 +443,7 @@ html, body{
 }
 
 
-.thead-dark{
+.thead-dark, .detalle{
     font-size: 0.8rem;
 }
 
@@ -420,4 +465,26 @@ html, body{
 
 .btn-editar a:hover{
     color:rgb(0, 80, 0);
+}
+
+.tags{
+    background-color: #282828;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    border-radius: 50px;
+}
+
+.tags a{
+    color:#fff;
+}
+
+.tags a:hover{
+    color:#e65221;
+}
+
+
+.tags i{
+    margin: 0 0 0 10px;
 }
